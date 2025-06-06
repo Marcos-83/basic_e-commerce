@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Magick IA</title>
+</head>
+<body>
+    
+    <header class="cabecalho">
+        <img src="./src/img/logo-png.webp" alt="Logo principal">
+    </header> <!--Fim do header-->
+    <main class="container">
+        <h1 class="produtos">Produtos</h1>
+        <div class="filtros">
+            <div class="categorias-cartas">
+                <label for="categoria">Categoria</label>
+                <select id="categoria" class="categoria">
+                    <option value="">Selecione uma carta</option>
+                    <option value="comum">Comum</option>
+                    <option value="rara">Rara</option>
+                    <option value="epica">Épica</option>
+                </select>
+            </div>
+            <div class="preco-cartas">
+                <label for="preco">Preço máximo (R$)</label>
+                <input type="text" id="preco" class="preco" placeholder="Ex: 100">
+            </div>
+            <button class="btn-filtrar">Aplicar filtros</button>
+        </div>
+        <ul class="cartas">
+            <li class="carta" data-categoria="Épica" data-preco="2500">
+                <img src="./src/img/título-10.png" alt="Donkey Kong">
+                <div class="informacao-carta">
+                    <h2 class="nome-personagem">Donkey Kong</h2>
+                    <span class="categoria">Categoria: Épica</span>
+                    <span class="preco">R$ 2.500,00</span>                    
+                    <a href="http://wa.me/5511999999999?text=Olá, quero comprar a carta Donkey Kong" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>           
+            
+            <li class="carta" data-categoria="Comum" data-preco="450">
+                <img src="./src/img/título-1.png" alt="Jogador">
+                <div class="informacao-carta">
+                    <h2 class="nome-personagem">jogador</h2>
+                    <span class="categoria">Categoria: Comum</span>
+                    <span class="preco">R$ 450,00</span>
+                    <a href="http://wa.me/5511999999999?text=Olá, quero comprar a carta jogador" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>           
+            
+            <li class="carta" data-categoria="Rara" data-preco="8300">
+                <img src="./src/img/título-2.png" alt="Fruto do Poder">
+                <div class="informacao-carta">
+                    <h2 class="nome-personagem">Fruto do Poder</h2>
+                    <span class="categoria">Categoria: Rara</span>
+                    <span class="preco">R$ 8.300,00</span>
+                    <a href="http://wa.me/5511999999999?text=Olá, quero comprar a carta Fruto do Poder" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>           
+            
+            <li class="carta" data-categoria="Épica" data-preco="1800">
+                <img src="./src/img/título-3.png" alt="Dinossaurinho">
+                <div class="informacao-carta">
+                    <h2 class="nome-personagem">Dinossaurinho</h2>
+                    <span class="categoria">Categoria: Épica</span>
+                    <span class="preco">R$ 1.800,00</span>
+                    <a href="http://wa.me/5511999999999?text=Olá, quero comprar a carta Dinossaurinho" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>           
+            
+            <li class="carta" data-categoria="Épica" data-preco="2000">
+                <img src="./src/img/título-4.png" alt="Pikachu">
+                <div class="informacao-carta">
+                    <h2 class="nome-personagem">Pikachu</h2>
+                    <span class="categoria">Categoria: Épica</span>
+                    <span class="preco">R$ 2.000,00</span>
+                    <a href="http://wa.me/5511999999999?text=Olá, quero comprar a carta Pikachu" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>           
+            
+            <li class="carta" data-categoria="Rara" data-preco="6380">
+                <img src="./src/img/título-5.png" alt="Ninja Dragon">
+                <div class="informacao-carta">
+                    <h2 class="nome-personagem">Ninja Dragon</h2>
+                    <span class="categoria">Categoria: Rara</span>
+                    <span class="preco">R$ 6.380,00</span>
+                    <a href="http://wa.me/5511999999999?text=Olá, quero comprar a carta Ninja Dragon" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>           
+            
+            <li class="carta" data-categoria="Comum" data-preco="378">
+                <img src="./src/img/título-6.png" alt="Jogador BasketBall">
+                <div class="informacao-carta">
+                    <h2 class="nome-personagem">Jogador BasketBall</h2>
+                    <span class="categoria">Categoria: Épica</span>
+                    <span class="preco">R$ 378,00</span>
+                    <a href="http://wa.me/5511999999999?text=Olá, quero comprar a carta Jogador BasketBall" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>           
+            
+            <li class="carta" data-categoria="Épica" data-preco="1785">
+                <img src="./src/img/título-7.png" alt="Super Luigi">
+                <div class="informacao-carta">
+                    <h2 class="nome-personagem">Super Luigi</h2>
+                    <span class="categoria">Categoria: Épica</span>
+                    <span class="preco">R$ 1.785,00</span>
+                    <a href="http://wa.me/5511999999999?text=Olá, quero comprar a carta Super Luigi" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>           
+            
+            <li class="carta" data-categoria="Épica" data-preco="1185">
+                <img src="./src/img/título-8.png" alt="Mega">
+                <div class="informacao-carta">
+                    <h2 class="nome-personagem">Mega</h2>
+                    <span class="categoria">Categoria: Épica</span>
+                    <span class="preco">R$ 1.185,00</span>
+                    <a href="http://wa.me/5511999999999?text=Olá, quero comprar a carta Mega" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>           
+            
+            <li class="carta" data-categoria="Comum" data-preco="1200">
+                <img src="./src/img/título-9.png" alt="Guerreiro">
+                <div class="informacao-carta">
+                    <h2 class="nome-personagem">Guerreiro</h2>
+                    <span class="categoria">Categoria: Comum</span>
+                    <span class="preco">R$ 1.200,00</span>
+                    <a href="http://wa.me/5511999999999?text=Olá, quero comprar a carta Guerreiro" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>           
+        </ul>
+    </main> <!--Fim do main-->
+    <footer class="rodape">@2025 - Todos os direitos reservados</footer> <!--Fim do footer-->
+
+
+</body>
+</html>
