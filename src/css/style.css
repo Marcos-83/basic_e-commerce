@@ -23,7 +23,7 @@ body {
 .container .produtos {
     color: #2d0e67;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 32px;
     line-height: 32px;
     letter-spacing: 2px;
@@ -51,7 +51,7 @@ body {
 
 .container .categorias-cartas select, .container .preco-cartas input {
     padding: 16px 13px;
-    border-radius: 2px;
+    border-radius: 5px;
     border: 3px solid #7950c6;
     background-color: #F2EEFA;
     color: #1e054f;
@@ -65,14 +65,15 @@ body {
     outline: none;
 }
 
-.container .categoria {
+.container select.categoria {
     appearance: none;
     background: url(../img/baixar.png) 97% center / 30px 25px no-repeat;
 }
 
 .container .filtros .btn-filtrar {
     border: none;
-    background-color: #7950c6;
+    border-radius: 5px;
+    background-color: #2d0e67;
     color: #ffffff;
     padding: 16px 32px;
     font-weight: 500;
@@ -82,4 +83,95 @@ body {
     cursor: pointer;
     letter-spacing: 2px;
     transition: 0.3s;
+}
+
+.container .filtros .btn-filtrar:hover {
+    background-color: #7950c6;
+}
+
+.container .cartas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.container .cartas .carta {
+    max-width: 365px;
+    background-color: #e3e0e7;
+    color: #0E0027;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.76);
+
+}
+
+.container .carta img {
+    width: 100%;
+    height: 340px;
+    padding: 20px;
+}
+
+.container .carta .informacao-carta {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 5px;
+}
+
+.container .carta .informacao-carta .nome-personagem {
+    font-size: 20px;
+    font-weight: 500;
+    color: #111111;
+
+}
+
+.container .carta .informacao-carta .categoria {
+    color: #7E7E7E;
+    font-weight: 700;
+
+}
+
+.container .carta .informacao-carta .preco {
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #4D8E5C;
+
+}
+
+.container .carta .informacao-carta .btn-comprar {
+    color: #F2EEFA;
+    background-color: #743fd6;
+    padding: 16px;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container .carta .informacao-carta .btn-comprar:hover {
+    background-color: #210952;
+}
+
+.rodape {
+    font-size: 18px;
+    letter-spacing: 2px;
+    background-color: #743fd6;
+    display: flex;
+    justify-content: center;
+    color: #F2EEFA;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.esconder {
+    display: none;
+}
+
+.mostra {
+    display: block;
 }
